@@ -15,7 +15,6 @@ import Foundation
     @objc optional var hasResizableWidth: Bool { get }
     @objc optional var hasResizableHeight: Bool { get }
     
-    @objc var identifier: NSUserInterfaceItemIdentifier? { get set }
     @objc var toolbarItemImage: NSImage { get }
     @objc var toolbarItemLabel: String { get }
 }
