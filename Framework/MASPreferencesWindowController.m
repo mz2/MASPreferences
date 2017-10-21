@@ -1,5 +1,7 @@
 #import "MASPreferencesWindowController.h"
 
+#import <MASPreferences/MASPreferences-Swift.h>
+
 NSString *const kMASPreferencesWindowControllerDidChangeViewNotification = @"MASPreferencesWindowControllerDidChangeViewNotification";
 
 static NSString *const kMASPreferencesFrameTopLeftKey = @"MASPreferences Frame Top Left";

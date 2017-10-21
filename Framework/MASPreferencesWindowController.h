@@ -7,7 +7,10 @@
 //     [_preferencesWindowController showWindow:sender]
 //
 
-#import "MASPreferencesViewController.h"
+//#import "MASPreferencesViewController.h"
+
+@import Cocoa;
+@protocol MASPreferencesViewController;
 
 extern NSString *_Nonnull const kMASPreferencesWindowControllerDidChangeViewNotification;
 

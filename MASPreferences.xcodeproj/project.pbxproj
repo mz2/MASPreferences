@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FC3A29F1F9AD0EF00E947E8 /* MASPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3A29E1F9AD0EF00E947E8 /* MASPreferencesViewController.swift */; };
 		F16AF8081BA27AFD0022155C /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F16AF8001BA27AFD0022155C /* MASPreferencesWindow.xib */; };
 		F16AF80A1BA27AFD0022155C /* MASPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8031BA27AFD0022155C /* MASPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F16AF80B1BA27AFD0022155C /* MASPreferencesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8051BA27AFD0022155C /* MASPreferencesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16AF80C1BA27AFD0022155C /* MASPreferencesWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16AF8061BA27AFD0022155C /* MASPreferencesWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F16AF80D1BA27AFD0022155C /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F16AF8071BA27AFD0022155C /* MASPreferencesWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FC3A29E1F9AD0EF00E947E8 /* MASPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MASPreferencesViewController.swift; sourceTree = "<group>"; };
 		F16AF7F41BA279F10022155C /* MASPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MASPreferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16AF8011BA27AFD0022155C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		F16AF8021BA27AFD0022155C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 				F16AF8021BA27AFD0022155C /* Info.plist */,
 				F16AF8041BA27AFD0022155C /* MASPreferences.modulemap */,
 				F16AF8031BA27AFD0022155C /* MASPreferences.h */,
+				5FC3A29E1F9AD0EF00E947E8 /* MASPreferencesViewController.swift */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -75,7 +77,6 @@
 			files = (
 				F16AF80A1BA27AFD0022155C /* MASPreferences.h in Headers */,
 				F16AF80C1BA27AFD0022155C /* MASPreferencesWindowController.h in Headers */,
-				F16AF80B1BA27AFD0022155C /* MASPreferencesViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +112,7 @@
 				TargetAttributes = {
 					F16AF7F31BA279F10022155C = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -148,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16AF80D1BA27AFD0022155C /* MASPreferencesWindowController.m in Sources */,
+				5FC3A29F1F9AD0EF00E947E8 /* MASPreferencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +250,7 @@
 		F16AF7FD1BA279F10022155C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -256,16 +260,20 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = Framework/MASPreferences.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shpakovski.MASPreferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		F16AF7FE1BA279F10022155C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,10 +283,12 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = Framework/MASPreferences.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.shpakovski.MASPreferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
