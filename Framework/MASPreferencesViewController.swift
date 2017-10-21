@@ -10,8 +10,6 @@ import Foundation
 
 @objc public protocol MASPreferencesViewController: NSObjectProtocol {
     
-    @objc optional func viewWillAppear()
-    @objc optional func viewDidDisappear()
     @objc optional func initialKeyView() -> NSView?
     
     @objc optional var hasResizableWidth: Bool { get }
